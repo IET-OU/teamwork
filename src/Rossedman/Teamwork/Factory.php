@@ -77,10 +77,13 @@ class Factory {
     {
         if($parameters == null) return null;
 
+        /* Commenting out this section because $parameters[0] is sometimes
+            actually an array and still valid.       
         if ( ! is_int($parameters[0]))
         {
             throw new \InvalidArgumentException("This is not a valid ID");
-        }
+        }*/
+
 
         return true;
     }
